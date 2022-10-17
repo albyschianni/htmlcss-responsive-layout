@@ -5,3 +5,37 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
+
+header {
+    background-color: #0084fd;
+    min-height: 75px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 75px;
+    text-align: center;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+/* .nav {
+    display: flex;
+    text-align: center;
+} */
+.nav-item {
+    color: white;
+
+}
+
+/* MAIN */
+
+
+
+
+/* FOOTER */
