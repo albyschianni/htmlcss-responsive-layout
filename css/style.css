@@ -35,15 +35,18 @@ li {
 .alternative-nav {
     display: none;
 }
+.fa-bars {
+    color: white;
+}
 
 /* tablet version */
 
-@media  and (max-width:768px) {
+@media screen and (max-width:768px) {
     
     .desktop-nav {
         display: none;
     }
-    ..alternative-nav {
+    .alternative-nav {
         display: block;
     }
 }
