@@ -97,12 +97,14 @@ li {
 }
 .demo-app2 {
     width: 50%;
-    position: relative;
+    display: flex;
+    align-self: flex-end;
+    
 }
 #img-phone {
-    width: 200px;
-    position: absolute;
-bottom: 0;
+    max-width: 200px;
+    bottom: 0;
+    
 }
 h2 {
     font-size: 22px;
@@ -144,6 +146,9 @@ p {
         width: 100%;
         z-index: 2;
         /* min-height: 400px; */
+    }
+    #img-phone {
+        margin-top: 15px;
     }
 }
 
@@ -396,7 +401,20 @@ p {
     padding: 8px 35px;
     border-radius: 25px;
   }
-}
+
+  /***** tablet version ******/
+  @media screen and (max-width:768px) {
+    .benefits-card {
+        width: calc( (100% / 2) - 20px);
+    }
+  }
+
+  /******** mobile version *********/
+  @media screen and (max-width:480px) {
+    .benefits-card {
+        width: 100%;
+    }
+  }
 
 /* SECTION ABOUT US */
 
@@ -405,9 +423,11 @@ p {
     display: flex;
     width: 78%;
     margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 80px;
 }
 .col-left-about {
-    width: 70%;
+    width: 62%;
 }
 .col-right-about {
     width: 30%;
@@ -417,19 +437,117 @@ p {
     width: 65%;
     border-radius: 50%;
 }
+#h2-about {
+    font-size: 40px;
+    color: #9792e4;
+}
+.text-about {
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 25px;
+} 
+#descriptio-about {
+    font-size: 18px;
+    color: #9792e4;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+#tag-linkedin {
+    text-decoration: none;
+    color: white;
+    background-color: #9792e4;
+    padding: 8px 14px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+.fa-linkedin {
+    color: white;
+}
 
+/***** tablet version ******/
 
+@media screen and (max-width:768px) {
+    #tag-linkedin {
+        font-size: 8px;
+    }
+}
+
+/******** mobile version *********/
+
+@media screen and (max-width:468px) {
+    .col-left-about, .col-right-about {
+        width: 100%;
+    }
+    .container-about {
+        flex-wrap: wrap;
+    }
+    #description-about {
+        font-size: 23px;
+    }
+    #tag-linkedin {
+        font-size: 14px;
+    }
+}
 
 /* SECTION GET STARTED */
 
 .section-getstarted {
     background-color: #9792e4;
+    padding: 50px 0;
 }
 .container-getstarted {
     width: 40%;
     margin: 0 auto;
     text-align: center;
+}
+#get-started {
+    font-size: 14px;
+    color: #cbc9f1;
+    margin-bottom: 20px;
+}
+#h2-getstarted {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+} 
+#free {
+    font-size: 50px;
+    color: #fdc15f;
+    font-weight: bold;
     
 }
+.lorem-getstarted {
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+#tag-getstarted2 {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 45px;
+    border-radius: 25px;
+}
+
 
 /* FOOTER */
+
+footer {
+    background-color: #333333;
+}
+.footer-container {
+    width: 40%;
+    margin: 0 auto;
+}
+.footer-text {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    padding: 20px;
+}
