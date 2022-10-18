@@ -262,7 +262,11 @@ p {
 }
 
 /******** mobile version *********/
-/* mantiene le stesse caratteristiche della versione tablet */
+@media screen and (max-width:480px) {
+    #text-planning {
+        font-size: 35px;
+    }
+}
 
 /* SECTION TESTIMONIALS */
 
@@ -275,16 +279,71 @@ p {
 }
 .scheda {
     background-color: #9792e4;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px;
     /* debug */
     min-height: 100px;
     margin-bottom: 20px;
 }
 .container-schede {
-    background-color: #012c52;
+    /* background-color: #012c52; */
     display: flex;
     flex-direction: column;
 
 }
+#text-testimonial {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.h2-benefits {
+    font-size: 30px;
+    color: #9792e4;
+    margin-bottom: 20px;
+}
+#lorem-testimonial {
+    font-size: 16px;
+    font-weight: lighter;
+    color: black;
+}
+.img-testimonial {
+    width: 100%;
+    border-radius: 50%;
+}
+.image-left {
+    width: 20%;
+}
+.text-right {
+    width: 80%;
+    padding: 20px;
+}
+.name-testimonial {
+    text-align: left;
+    color: white;
+    
+}
+.description-testimonial {
+    text-align: left;
+    color: white;
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+}
+
+
+/******** mobile version *********/
+@media screen and (max-width:480px) {
+    .scheda {
+        flex-wrap: wrap;
+    }
+    .image-left {
+        width: 100%;
+    }
+}
+
 
 /* <!-- SECTION BENEFITS --> */
 
@@ -292,8 +351,11 @@ p {
 #benefits {
     background-color: #9792e4;
     margin-bottom: 50px;
+    padding: 25px 0;
 }
-h2.h2-benefits {
+#h2-benefits {
+    font-size: 30px;
+    color: white;
     text-align: center;
 }
 .container-benefits {
@@ -306,11 +368,35 @@ h2.h2-benefits {
 
 .benefits-card {
     width: calc( (100% / 3) - 20px);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     min-height: 100px;
     background-color: white;
+    padding: 20px;
+    border-radius: 25px;
 }
-
+.n-benefits {
+    font-size: 55px;
+    color: #9792e4;
+}
+.feature-benefits {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #9792e4;
+}
+.p-benefits {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6c6c6c;
+    font-weight: lighter;
+}
+.tag-more {
+    text-decoration: none;
+    color: white;
+    background-color: #9792e4;
+    padding: 8px 35px;
+    border-radius: 25px;
+  }
+}
 
 /* SECTION ABOUT US */
 
